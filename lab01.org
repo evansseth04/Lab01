@@ -55,14 +55,14 @@ No option in any category will ever be used more than once.
 
 Solution
 
-| Shoe Sizes | Customers |  Brands  | Prices |
-|          4 |   Marie   | Graffetz |   185  |
-|          5 |  Vanessa  | Schtillet|   215  |
-|          6 |   Lucia   | Cormano  |   155  |
-|          7 |  Estelle  | Tinghill |   260  |
-|          8 |  Natalie  | Wilford  |   125  |
-|          9 | Francine  | Manzarita|   245  |
-|         10 |   Ruth    | Ruth     |   170  |
+| Shoe Sizes | Customers |  Brands    | Prices |
+|          4 |   Marie   | Graffetz   |   185  |
+|          5 |  Vanessa  | Schtillet  |   215  |
+|          6 |   Lucia   | Cormano    |   155  |
+|          7 |  Estelle  | Tinghill   |   260  |
+|          8 |  Natalie  | Wilford    |   125  |
+|          9 | Francine  | Manzarita  |   245  |
+|         10 |   Ruth    | Abbott Hill|   170  |
 
 
 VALUES FOR THIS TABLE CAN BE FOUND IN image.png
