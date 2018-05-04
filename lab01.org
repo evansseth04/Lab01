@@ -106,7 +106,7 @@ You must put them in this file!
    :LOGBOOK:
    CLOCK: [2018-05-03 Thu 13:23]--[2018-05-03 Thu 13:27] =>  0:04
    :END:
-#+begin_no /p/ \lor \not /qte
+#+begin_note /p/ \lor \not /qte
   Which of the following are simple (not compound) propositions?
 
   1. Weeks are shorter than months.
