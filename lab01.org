@@ -76,13 +76,222 @@ Solution
 Values for the table shown in class can be found in [[./image.png]]
 
 
-* TODO Exercises
+* DONE Exercises
+  CLOSED: [2018-05-04 Fri 14:03]
 In 01-ponder do every third exercise. 
 That is if you start at the first or 1st then you need to do 4th,
 but if you start at 3rd then you need to do the 6th.
 
 You must put them in this file!
+** DONE UCA
+   CLOSED: [2018-05-03 Thu 13:21]
+   :LOGBOOK:
+   CLOCK: [2018-05-03 Thu 13:21]--[2018-05-03 Thu 13:22] =>  0:01
+   :END:
+#+begin_note
+  Start your exercise warmup by thinking up three examples and three
+  non-examples of propositions. Make them pithy.
+#+end_note
+#+begin_info
+  I love discrete math.
+  I detest discrete math.
+  This table is flat.
 
+  Shut down your computer.
+  Go outside.
+  Get a life.
+#+end_info
+** DONE OGR
+   CLOSED: [2018-05-03 Thu 13:22]
+   :LOGBOOK:
+   CLOCK: [2018-05-03 Thu 13:23]--[2018-05-03 Thu 13:27] =>  0:04
+   :END:
+#+begin_no /p/ \lor \not /qte
+  Which of the following are simple (not compound) propositions?
+
+  1. Weeks are shorter than months.
+  2. Days are longer than hours and minutes.
+  3. Hours are longer than minutes and seconds are shorter than minutes.
+  4. People can fly or pigs can sing.
+#+end_note
+#+begin_info
+  1 is simple
+  The rest are compound
+#+end_info
+** DONE UOX
+   CLOSED: [2018-05-03 Thu 13:47]
+   :LOGBOOK:
+   CLOCK: [2018-05-03 Thu 13:40]--[2018-05-03 Thu 13:47] =>  0:07
+   CLOCK: [2018-05-03 Thu 13:29]--[2018-05-03 Thu 13:32] =>  0:03
+   :END:
+#+begin_note
+  What other special forms besides =if= does elisp have for doing conditionals?
+  Why are they called \ldquo{}special\rdquo?
+:HINT:
+  - Hint :: You can find at least six.
+:END:
+#+end_note
+#+begin_info
+  They are called special because of a special sytax, or they have special evaluation rules.
+ Here is a list of special operators for doing conditionals:
+ and 
+ cond
+ or
+ when
+ not
+ unless
+
+#+end_info
+** DONE UIN
+   CLOSED: [2018-05-03 Thu 13:51]
+   :LOGBOOK:
+   CLOCK: [2018-05-03 Thu 13:49]--[2018-05-03 Thu 13:51] =>  0:02
+   :END:
+#+begin_note
+  What is the set difference between the set of letters in the English alphabet
+  and the set of letters in the Hawaiian alphabet?
+#+end_note
+#+begin_info
+  C, F, G, J, Q, S, X, Y, Z
+#+end_info
+** DONE OQT
+   CLOSED: [2018-05-03 Thu 13:52]
+   :LOGBOOK:
+   CLOCK: [2018-05-03 Thu 13:51]--[2018-05-03 Thu 13:52] =>  0:01
+   :END:
+#+begin_note
+  Let /p/ and /q/ be the propositions:
+
+  /p/: I studied.
+
+  /q/: I got an A on the test.
+
+  Express each of the propositions below as an English sentence:
+  1. /p/ \rarr /q/
+  2. \not /p/ \lor \not /q/
+  3. \not /p/ \rarr (p \lor q)
+  4. \not /p/ \rarr \not /q/
+#+end_note
+#+begin_info
+  1. I studied, so I got an A on the test.
+  2. I did not study, or I did not get an A on the test.
+  3. Because I did not study, I need to study or get an A on the test.
+  4. Because I did not study, I did not get an A on the test.
+#+end_info
+** DONE OLH
+   CLOSED: [2018-05-04 Fri 12:30]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 11:58]--[2018-05-04 Fri 12:29] =>  0:31
+   :END:
+#+begin_note
+  Use truth tables to verify the associative laws.
+  1. $(p \vee q) \vee r \equiv p \vee (q \vee r)$
+  2. $(p \wedge q) \wedge r \equiv p \wedge (q \wedge r)$
+#+end_note
+#+begin_info
+1.
+  | r | p | q | p V q | (p V q) V r |
+  |---+---+---+-------+-------------|
+  | 0 | 0 | 0 |     0 |           0 |
+  | 0 | 0 | 1 |     1 |           1 |
+  | 0 | 1 | 0 |     1 |           1 |
+  | 0 | 1 | 1 |     1 |           1 |
+  | 1 | 0 | 0 |     0 |           1 |
+  | 1 | 0 | 1 |     1 |           1 |
+  | 1 | 1 | 0 |     1 |           1 |
+  | 1 | 1 | 1 |     1 |           1 |
+
+  | r | p | q | q V r | p V (q V r) |
+  |---+---+---+-------+-------------|
+  | 0 | 0 | 0 |     0 |           0 |
+  | 0 | 0 | 1 |     1 |           1 |
+  | 0 | 1 | 0 |     0 |           1 |
+  | 0 | 1 | 1 |     1 |           1 |
+  | 1 | 0 | 0 |     1 |           1 |
+  | 1 | 0 | 1 |     1 |           1 |
+  | 1 | 1 | 0 |     1 |           1 |
+  | 1 | 1 | 1 |     1 |           1 |
+
+  The expressions ((p V q) V r) and (p V (q V r)) are logically equivalent.
+
+2.
+  | r | p | q | p \wedge q | (q \wedge r) \wedge r |
+  |---+---+---+-------+-------------|
+  | 0 | 0 | 0 |     0 |           0 |
+  | 0 | 0 | 1 |     0 |           0 |
+  | 0 | 1 | 0 |     0 |           0 |
+  | 0 | 1 | 1 |     1 |           0 |
+  | 1 | 0 | 0 |     0 |           0 |
+  | 1 | 0 | 1 |     0 |           0 |
+  | 1 | 1 | 0 |     0 |           0 |
+  | 1 | 1 | 1 |     1 |           1 |
+
+  | r | p | q | q \wedge r | p \wedge (q \wedge r) |
+  |---+---+---+-------+-------------|
+  | 0 | 0 | 0 |     0 |           0 |
+  | 0 | 0 | 1 |     0 |           0 |
+  | 0 | 1 | 0 |     0 |           0 |
+  | 0 | 1 | 1 |     0 |           0 |
+  | 1 | 0 | 0 |     0 |           0 |
+  | 1 | 0 | 1 |     1 |           0 |
+  | 1 | 1 | 0 |     0 |           0 |
+  | 1 | 1 | 1 |     1 |           1 |
+
+  The expressions ((p \wedge q) \wedge r) and (q \wedge (q \wedge r)) are logically equivalent.
+#+end_info
+** DONE USL
+   CLOSED: [2018-05-04 Fri 13:00]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 12:40]--[2018-05-04 Fri 12:59] =>  0:19
+   :END:
+#+begin_note
+  Use truth tables to verify some miscellaneous laws, letting $\mathbf{1}$ =
+  true, $\mathbf{0}$ = false:
+  1. $p \land \mathbf{1} \equiv p$ (idempotence)
+  2. $p \lor \mathbf{0} \equiv p$ (idempotence)
+  3. $\lnot \lnot p \equiv p$ (double negation)
+  4. $p \land \mathbf{0} \equiv \mathbf{0}$ (absorption)
+  5. $p \lor \mathbf{1} \equiv \mathbf{1}$ (absorption)
+#+end_note
+#+begin_info
+1.
+   | p | \mathbf{1}| p \wedge \mathbf{1} |
+   |---+-----------+----------------|
+   | 0 |         1 |              0 |
+   | 1 |         1 |              1 |
+   This truth table proves that p \wedge \mathbf{1} is logically equivalent to p,
+   and that ANDing a variable with a tautology always outputs the value of the 
+   variable.
+2.
+   | p | \mathbf{0} | p \vee \mathbf{0} |
+   |---+------------+----------------|
+   | 0 |          0 |              0 |
+   | 1 |          0 |              1 |
+   This truth table proves that p \vee \mathbf{0} is logically equivalent to p,
+   and that ORing a variable with a contradiction always outputs the value of 
+   the variable.
+3. 
+   | p | NOT p | NOT (NOT) p |
+   |---+-------+-------------|
+   | 0 |     1 |           0 |
+   | 1 |     0 |           1 |
+   This truth table proves that NOT NOT p is logically equivalent to p, meaning 
+   that a double negative cancels itself out.
+4.
+   | p | \mathbf{0} | p \wedge \mathbf{0} |
+   |---+------------+----------------|
+   | 0 |          0 |              0 |
+   | 1 |          0 |              0 |
+   This truth table proves that if you AND anything with a contradiction, 
+   the contradiction will absorb the value of the other input(s).
+5.
+   | p | \mathbf{1} | p \vee \mathbf{1} |
+   |---+------------+----------------|
+   | 0 |          1 |              1 |
+   | 1 |          1 |              1 |
+   This truth table prove that if you OR anything with a tautology, the tautology 
+   will absorb the value of the other input(s). 
+#+end_info
 * DO NOT INCLUDE THIS PART BELOW FOR THE LAB
 * ######## FOR PUZZLES AND PROJECTS #########
 A more Brother Neff-like assignment, with a Brother Benning twist!
