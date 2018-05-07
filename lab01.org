@@ -11,6 +11,13 @@ As a group or individually create a public repo on github.
 Then create your own file with your solutions.  Please include
 the name of each team member. 
 
+Team Members:
+Seth Evans
+Brady Nelson
+Kace Chandler
+TJ McDaniel
+Garrett Menke
+
 * DONE Welcome to the world of unicorns, goblins
   CLOSED: [2018-05-04 Fri 13:37]
   :LOGBOOK:
